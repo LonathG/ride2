@@ -1,9 +1,28 @@
-import { FizziLogo } from "@/components/FizziLogo";
+import React from "react";
+// import { FizziLogo } from "@/components/FizziLogo";
 
-export function Header() {
+type Props = {};
+
+function RideLogo({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="-250 0 800 67"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+    >
+           <path
+         fill="#075985"
+         d="M86.3 1.2C92 1.2 96 2.8 98.4 6c2.6 3.2 3 7.2 1 11.8l-6.2 14.5c-1.3 3.1-3.5 6-6.5 8.6s-6.4 4.5-10.3 6c-.6.2-.8.6-.6 1l6.4 14.3c.4 1 .2 1.8-.6 2.7-.7.8-1.7 1.2-2.8 1.2H56.7L50 49.7c-.4-.4-.8-.6-1.3-.6H31.4c-.6 0-1 .2-1.1.7l-5 11.8a6 6 0 0 1-2.4 2.5c-1.1.7-2.3 1-3.5 1H1l21.8-51.4V1.2h63.6Zm-11 19.2c.5-1 .4-1.7-.1-2.2-.4-.7-1.2-1-2.3-1H34l8.4 4.1-5 11.7h28.8c1 0 2-.3 3-.8 1-.7 1.8-1.4 2.2-2.3l4-9.5ZM138.8 1 131 19.3h-11l9.2 4.4-16 37.7a6 6 0 0 1-2.5 2.5c-1 .7-2.2 1.1-3.4 1.1H88.6l21.8-51.4.1-12.6h28.2Zm66.5 0c5.6 0 9.6 1.7 12.1 5 2.6 3.2 3 7 1 11.7l-13 30.8c-2 4.6-5.7 8.5-11 11.8a30.8 30.8 0 0 1-16.3 4.9h-55l21.8-51.6.1-12.5h60.3Zm-10.7 18.7c.2-.6.2-1-.1-1.5-.3-.4-.8-.6-1.6-.6h-35.2l7 3.7-10.6 25c-.3.6-.3 1.2 0 1.6.4.4.9.6 1.6.6h24.1a3.9 3.9 0 0 0 3.5-2.2zM228.9 1h76.3l-6 14.2c-.2.6-.7 1.2-1.4 1.6q-1.05.6-2.1.6h-55.1l8.1 4.1-1.6 3.9h39l-5.5 13.2c-.3.6-.8 1-1.5 1.5-.6.4-1.3.6-2 .6h-35.7c-.6 0-1 .3-1.1.8l-3 6.8h47.8L278.9 63a3 3 0 0 1-1.4 1.5q-1.05.6-2.1.6h-68.1L229 14.3V1Z"
+       ></path>
+    </svg>
+  );
+}
+
+export default function Header({}: Props) {
     return (
-        <header className="-mb-28 flex justify-center py-4">
-            <FizziLogo className="z-10 h-20 cursor-pointer text-sky-800" />
-        </header>
+    <header className="flex justify-center py-4 -mb-28">
+        <RideLogo className="w-20"/>
+    </header>
     );
 }
